@@ -1,5 +1,12 @@
-let speechRec = window.webkitSpeechRecogniitions
-let Rec = new speechRec()
-let textbox = $("#textbox")
-let content = ''
-Rec.contionus = true
+texbox.addEventListener('click', function () {
+    var speech = true
+    window.SpeechRecognition = window.webkitSpeechRecognition
+
+    const Rec = new SpeechRecognition()
+
+    Rec.interimResults = true
+
+    if(speech == true){
+        Rec.start()
+    }
+})
